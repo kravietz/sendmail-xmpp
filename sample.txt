@@ -1,0 +1,19 @@
+To: <recipient@xmpp.example.com>
+From: Wazuh <sender_password@xmpp.example.com>
+Date: Wed, 23 Jan 2019 21:30:23 +0000
+Subject: OSSEC Notification - tyler->ossec-monitord - Alert level 3
+
+
+Wazuh Notification.
+2019-01-23T21:30:21.559+0000
+
+Received From: tyler->ossec-monitord
+Rule: 502 fired (level 3) -> "Wazuh server started."
+Portion of the log(s):
+
+ossec: Ossec started.
+
+
+ --END OF NOTIFICATION
+
+
