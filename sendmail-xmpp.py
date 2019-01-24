@@ -41,7 +41,7 @@ if __name__ == '__main__':
             if len(line) == 0:
                 in_header = False
         else:
-            message += line
+            message += line + '\n'
 
     if not {'to', 'from', 'subject'}.issubset(header.keys()):
         raise ValueError('Message must contain at least To, From, Subject headers', header)
