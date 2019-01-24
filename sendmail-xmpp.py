@@ -62,8 +62,11 @@ if __name__ == '__main__':
     recipients = [x[1] for x in email.utils.getaddresses([header['to']])]
 
     xmpp = Sendmail(jid, password, recipients, message, header['subject'])
+    
     if xmpp.connect():
         xmpp.process(block=True)
     else:
         print('Unable to connect.')
-    exit(1)
+        exit(1)
+
+    exit(0)
